@@ -76,10 +76,10 @@ public class LockedMeApp {
                     searchFile(scanner);
                     break;
                 case 4:
-                    System.out.println("Returning to the main menu.");
+                    System.out.println("\nReturning to the main menu.....\n");
                     break;
                 case 5:
-                    System.out.println("Closing the application. Goodbye!");
+                    System.out.println("\n\tClosing the application. Goodbye!");
                     System.exit(0);
             }
 
@@ -96,7 +96,7 @@ public class LockedMeApp {
     }
 
     private static void addFile(Scanner scanner) {
-        System.out.print("\nEnter the file name to add: ");
+        System.out.print("\nEnter the file name to add [No spaces}: ");
         String newFile = scanner.next().toLowerCase(); // Ignore case sensitivity
         fileNames.add(newFile);
         System.out.println("File added successfully.");
